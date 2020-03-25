@@ -10,12 +10,9 @@ def my_each(array) # put argument(s) here
   else
     "No block was given."
 end
+array
 end
 
 collection = [1, 2, 3, 4]  
 
-my_each([1, 2, 3, 4]) do |num| 
-  array = []
-  array << num[i]
-end
-end
+my_each([1, 2, 3, 4]) {|i| i}
